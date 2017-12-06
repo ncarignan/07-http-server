@@ -20,14 +20,14 @@
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">24.39% </span>
+        <span class="strong">20% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>10/41</span>
+        <span class='fraction'>10/50</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">0% </span>
         <span class="quiet">Branches</span>
-        <span class='fraction'>0/8</span>
+        <span class='fraction'>0/14</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">0% </span>
@@ -35,9 +35,9 @@
         <span class='fraction'>0/5</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">24.39% </span>
+        <span class="strong">20% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>10/41</span>
+        <span class='fraction'>10/50</span>
       </div>
     </div>
   </div>
@@ -114,7 +114,43 @@
 69
 70
 71
-72</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -144,6 +180,42 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -190,7 +262,7 @@
 const http = require('http');
 const winston = require('winston');
 const requestParser = require('./request-parser');
-const faker = require('faker');
+const cowsay = require('cowsay');
 const winstonLevels = {error: 0, warn : 1, info : 2, verbose : 3, debug : 4};
 &nbsp;
 &nbsp;
@@ -214,13 +286,49 @@ const app = http.createServer(<span class="fstat-no" title="function not covered
       // this is the same as having http:/localhost:3000/
 <span class="cstat-no" title="statement not covered" >      if(request.method === 'GET' &amp;&amp; request.url.pathname === '/'){</span>
 <span class="cstat-no" title="statement not covered" >        response.writeHead(200, {'Content-Type' : 'text/html'});</span>
-<span class="cstat-no" title="statement not covered" >        response.write(`&lt;DOCTYPE html&gt;</span>
-          &lt;head&gt;&lt;title&gt;&lt;THIS IS A TITLE!&lt;/title&gt;&lt;/head&gt;
-          &lt;body&gt;
-            &lt;h1&gt;HELO WORLD FROM THE SERVER&lt;/h1&gt;
-            &lt;h2?${faker.hacker.phrase()}&lt;/h2&gt;
-          &lt;/body&gt;
-          &lt;/html&gt;`);
+<span class="cstat-no" title="statement not covered" >        response.write(`&lt;!DOCTYPE html&gt;</span>
+                          &lt;html&gt;
+                            &lt;head&gt;
+                              &lt;title&gt; cowsay &lt;/title&gt;
+                            &lt;/head&gt;
+                            &lt;body&gt;
+                             &lt;header&gt;
+                               &lt;nav&gt;
+                                 &lt;ul&gt;
+                                   &lt;li&gt;&lt;a href="/cowsay"&gt;cowsay&lt;/a&gt;&lt;/li&gt;
+                                 &lt;/ul&gt;
+                               &lt;/nav&gt;
+                             &lt;header&gt;
+                             &lt;main&gt;
+                               &lt;!-- project description --&gt;
+                             &lt;/main&gt;
+                            &lt;/body&gt;
+                          &lt;/html&gt;
+                          `);
+<span class="cstat-no" title="statement not covered" >        logger.log('info', `responding with a 200 status code`);</span>
+<span class="cstat-no" title="statement not covered" >        response.end();</span>
+<span class="cstat-no" title="statement not covered" >        return;</span>
+      }else <span class="cstat-no" title="statement not covered" >if(request.method === 'GET' &amp;&amp; request.url.pathname === '/cowsay'){</span>
+<span class="cstat-no" title="statement not covered" >        response.writeHead(200, {'Content-Type' : 'text/html'});</span>
+        let cowsays;
+<span class="cstat-no" title="statement not covered" >        if(!req.url.query.text){</span>
+<span class="cstat-no" title="statement not covered" >          cowsays = 'I need something good to say!';</span>
+        }else {
+<span class="cstat-no" title="statement not covered" >          cowsays = req.url.query.text;</span>
+        }
+<span class="cstat-no" title="statement not covered" >        response.write(`&lt;!DOCTYPE html&gt;</span>
+                          &lt;html&gt;
+                            &lt;head&gt;
+                              &lt;title&gt; cowsay &lt;/title&gt;
+                            &lt;/head&gt;
+                            &lt;body&gt;
+                              &lt;h1&gt; cowsay &lt;/h1&gt;
+                              &lt;pre&gt;
+                                ${cowsay.say({text: cowsays})}
+                              &lt;/pre&gt;
+                            &lt;/body&gt;
+                          &lt;/html&gt;
+                          `);
 <span class="cstat-no" title="statement not covered" >        logger.log('info', `responding with a 200 status code`);</span>
 <span class="cstat-no" title="statement not covered" >        response.end();</span>
 <span class="cstat-no" title="statement not covered" >        return;</span>
@@ -262,7 +370,7 @@ server.stop = <span class="fstat-no" title="function not covered" >(c</span>allb
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Tue Dec 05 2017 17:13:59 GMT-0800 (PST)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Wed Dec 06 2017 07:59:12 GMT-0800 (PST)
 </div>
 </div>
 <script src="prettify.js"></script>

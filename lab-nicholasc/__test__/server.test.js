@@ -4,7 +4,14 @@ const superagent = require('superagent');
 const server = require('../lib/server');
 
 describe('server.js', () => {
-  test('GET request should respond with a 200 status code and a body if there is no error', () => {
+  test('GET request to / should respond with a 200 status code and a body if there is no error', () => {
+    return superagent.get('http://localhost:3000/')
+      .then(response => {
+        expect(response.status).toEqual(200);
+        expect(response.text).toContain(`<li><a href="/cowsay">cowsay</a></li>`);
+      });
+  });
+  test('GET request to /cowsay should respond with a 200 status code and a body if there is no error', () => {
     return superagent.get('http://localhost:3000/')
       .then(response => {
         expect(response.status).toEqual(200);
@@ -13,7 +20,7 @@ describe('server.js', () => {
   });
 
 
-  
+
   test('POST request should respond with a 400 status code if there is an error', () => {
     let bodyToTest = {car : 'Gregor'};
     return superagent.post('http://localhost:3000/echo')
