@@ -150,7 +150,34 @@
 105
 106
 107
-108</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -204,27 +231,54 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -308,14 +362,15 @@ const app = http.createServer(<span class="fstat-no" title="function not covered
 <span class="cstat-no" title="statement not covered" >        logger.log('info', `responding with a 200 status code`);</span>
 <span class="cstat-no" title="statement not covered" >        response.end();</span>
 <span class="cstat-no" title="statement not covered" >        return;</span>
-      }else <span class="cstat-no" title="statement not covered" >if(request.method === 'GET' &amp;&amp; request.url.pathname === '/cowsay'){</span>
+      }<span class="cstat-no" title="statement not covered" >if(request.method === 'GET' &amp;&amp; request.url.pathname === '/cowsay'){</span>
 <span class="cstat-no" title="statement not covered" >        response.writeHead(200, {'Content-Type' : 'text/html'});</span>
-        let cowsays;
-<span class="cstat-no" title="statement not covered" >        if(!req.url.query.text){</span>
-<span class="cstat-no" title="statement not covered" >          cowsays = 'I need something good to say!';</span>
-        }else {
-<span class="cstat-no" title="statement not covered" >          cowsays = req.url.query.text;</span>
-        }
+&nbsp;
+        let cowSays;
+<span class="cstat-no" title="statement not covered" >        if(request.url.query.text)</span>
+<span class="cstat-no" title="statement not covered" >          cowSays = request.url.query.text;</span>
+        else
+<span class="cstat-no" title="statement not covered" >          cowSays = 'I need something good to say!';</span>
+&nbsp;
 <span class="cstat-no" title="statement not covered" >        response.write(`&lt;!DOCTYPE html&gt;</span>
                           &lt;html&gt;
                             &lt;head&gt;
@@ -324,7 +379,7 @@ const app = http.createServer(<span class="fstat-no" title="function not covered
                             &lt;body&gt;
                               &lt;h1&gt; cowsay &lt;/h1&gt;
                               &lt;pre&gt;
-                                ${cowsay.say({text: cowsays})}
+                                ${cowsay.say({ text: cowSays})}
                               &lt;/pre&gt;
                             &lt;/body&gt;
                           &lt;/html&gt;
@@ -332,6 +387,32 @@ const app = http.createServer(<span class="fstat-no" title="function not covered
 <span class="cstat-no" title="statement not covered" >        logger.log('info', `responding with a 200 status code`);</span>
 <span class="cstat-no" title="statement not covered" >        response.end();</span>
 <span class="cstat-no" title="statement not covered" >        return;</span>
+      // }else if(request.method === 'GET' &amp;&amp; request.url.pathname === '/cowsay'){
+      //   response.writeHead(200, {'Content-Type' : 'text/html'});
+      //   // let cowsays;
+      //   // if(!req.url.query.text){
+      //   //   cowsays = 'I need something good to say!';
+      //   // }else {
+      //   //   cowsays = req.url.query.text;
+      //   // }
+      //   cowsays = req.url.query.text;
+      //
+      //   response.write(`&lt;!DOCTYPE html&gt;
+      //                     &lt;html&gt;
+      //                       &lt;head&gt;
+      //                         &lt;title&gt; cowsay &lt;/title&gt;
+      //                       &lt;/head&gt;
+      //                       &lt;body&gt;
+      //                         &lt;h1&gt; cowsay &lt;/h1&gt;
+      //                         &lt;pre&gt;
+      //                           ${cowsay.say({text: cowsays})}
+      //                         &lt;/pre&gt;
+      //                       &lt;/body&gt;
+      //                     &lt;/html&gt;
+      //                     `);
+      //   logger.log('info', `responding with a 200 status code`);
+      //   response.end();
+      //   return;
       }else <span class="cstat-no" title="statement not covered" >if(request.method == 'POST' &amp;&amp; request.url.pathname == '/echo'){</span>
 <span class="cstat-no" title="statement not covered" >        response.writeHead(200, {'Content-Type' : 'application/json'});</span>
 <span class="cstat-no" title="statement not covered" >        response.write(JSON.stringify(request.body));</span>
@@ -370,7 +451,7 @@ server.stop = <span class="fstat-no" title="function not covered" >(c</span>allb
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Wed Dec 06 2017 07:59:12 GMT-0800 (PST)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Wed Dec 06 2017 08:22:20 GMT-0800 (PST)
 </div>
 </div>
 <script src="prettify.js"></script>

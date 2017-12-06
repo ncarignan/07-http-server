@@ -12,17 +12,14 @@ describe('server.js', () => {
       });
   });
   test('GET request to /cowsay should respond with a 200 status code and a body if there is no error', () => {
-    return superagent.get('http://localhost:3000/')
+    return superagent.get('http://localhost:3000/cowsay?text=hi')
       .then(response => {
         expect(response.status).toEqual(200);
-        expect(response.text).toContain(`<li><a href="/cowsay">cowsay</a></li>`);
+        expect(response.text).toContain(`cowsay`);
       });
   });
-
-
-
-  test('POST request should respond with a 400 status code if there is an error', () => {
-    let bodyToTest = {car : 'Gregor'};
+  test('POST to /api/cowsay request should respond with a 200 status code and a body', () => {
+    let bodyToTest = {content : 'i wish i had thumbs'};
     return superagent.post('http://localhost:3000/echo')
       .set('Content-Type', 'Application/json')
       .send('{') //send returns a Promise now everything that follows should be then or catch
@@ -31,6 +28,18 @@ describe('server.js', () => {
         expect(response.status).toEqual(400);
       });
   });
+  //
+  //
+  // test('POST request should respond with a 400 status code if there is an error', () => {
+  //   let bodyToTest = {car : 'Gregor'};
+  //   return superagent.post('http://localhost:3000/echo')
+  //     .set('Content-Type', 'Application/json')
+  //     .send('{') //send returns a Promise now everything that follows should be then or catch
+  //     .then(response => Promise.reject(response)) //prevents it from sending positive response when expecting error
+  //     .catch(response => {
+  //       expect(response.status).toEqual(400);
+  //     });
+  // });
 });
 
 

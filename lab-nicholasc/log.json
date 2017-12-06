@@ -147,3 +147,310 @@
 {"level":"info","message":"Headers: {\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"user-agent\":\"node-superagent/3.8.1\",\"content-type\":\"Application/json\",\"content-length\":\"1\",\"connection\":\"close\"}","timestamp":"2017-12-06T15:59:12.186Z"}
 {"level":"info","message":"answering with a 400 status code","timestamp":"2017-12-06T15:59:12.187Z"}
 {"message":"Unexpected end of JSON input","stack":"SyntaxError: Unexpected end of JSON input\n    at Object.parse (native)\n    at IncomingMessage.request.on.error (/home/ncarignan/cf/401/lab-assignments/07-http-server/lab-nicholasc/lib/request-parser.js:42:29)\n    at emitNone (events.js:86:13)\n    at IncomingMessage.emit (events.js:185:7)\n    at endReadableNT (_stream_readable.js:974:12)\n    at _combinedTickCallback (internal/process/next_tick.js:80:11)\n    at process._tickCallback (internal/process/next_tick.js:104:9)","level":"info","timestamp":"2017-12-06T15:59:12.187Z"}
+{"level":"info","message":"Processing Request","timestamp":"2017-12-06T16:03:04.270Z"}
+{"level":"info","message":"Method: GET","timestamp":"2017-12-06T16:03:04.270Z"}
+{"level":"info","message":"URL: /","timestamp":"2017-12-06T16:03:04.270Z"}
+{"level":"info","message":"Headers: {\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"user-agent\":\"node-superagent/3.8.1\",\"connection\":\"close\"}","timestamp":"2017-12-06T16:03:04.270Z"}
+{"level":"info","message":"responding with a 200 status code","timestamp":"2017-12-06T16:03:04.271Z"}
+{"level":"info","message":"Processing Request","timestamp":"2017-12-06T16:03:04.280Z"}
+{"level":"info","message":"Method: GET","timestamp":"2017-12-06T16:03:04.280Z"}
+{"level":"info","message":"URL: /cowsay","timestamp":"2017-12-06T16:03:04.280Z"}
+{"level":"info","message":"Headers: {\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"user-agent\":\"node-superagent/3.8.1\",\"connection\":\"close\"}","timestamp":"2017-12-06T16:03:04.280Z"}
+{"level":"info","message":"answering with a 400 status code","timestamp":"2017-12-06T16:03:04.280Z"}
+{"message":"req is not defined","stack":"ReferenceError: req is not defined\n    at requestParser.parse.then.request (/home/ncarignan/cf/401/lab-assignments/07-http-server/lab-nicholasc/lib/server.js:55:13)\n    at process._tickCallback (internal/process/next_tick.js:109:7)","level":"info","timestamp":"2017-12-06T16:03:04.280Z"}
+{"level":"info","message":"Processing Request","timestamp":"2017-12-06T16:03:04.284Z"}
+{"level":"info","message":"Method: POST","timestamp":"2017-12-06T16:03:04.285Z"}
+{"level":"info","message":"URL: /echo","timestamp":"2017-12-06T16:03:04.285Z"}
+{"level":"info","message":"Headers: {\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"user-agent\":\"node-superagent/3.8.1\",\"content-type\":\"Application/json\",\"content-length\":\"1\",\"connection\":\"close\"}","timestamp":"2017-12-06T16:03:04.285Z"}
+{"level":"info","message":"answering with a 400 status code","timestamp":"2017-12-06T16:03:04.285Z"}
+{"message":"Unexpected end of JSON input","stack":"SyntaxError: Unexpected end of JSON input\n    at Object.parse (native)\n    at IncomingMessage.request.on.error (/home/ncarignan/cf/401/lab-assignments/07-http-server/lab-nicholasc/lib/request-parser.js:42:29)\n    at emitNone (events.js:86:13)\n    at IncomingMessage.emit (events.js:185:7)\n    at endReadableNT (_stream_readable.js:974:12)\n    at _combinedTickCallback (internal/process/next_tick.js:80:11)\n    at process._tickCallback (internal/process/next_tick.js:104:9)","level":"info","timestamp":"2017-12-06T16:03:04.285Z"}
+{"level":"info","message":"Processing Request","timestamp":"2017-12-06T16:03:04.290Z"}
+{"level":"info","message":"Method: POST","timestamp":"2017-12-06T16:03:04.290Z"}
+{"level":"info","message":"URL: /echo","timestamp":"2017-12-06T16:03:04.290Z"}
+{"level":"info","message":"Headers: {\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"user-agent\":\"node-superagent/3.8.1\",\"content-type\":\"Application/json\",\"content-length\":\"1\",\"connection\":\"close\"}","timestamp":"2017-12-06T16:03:04.290Z"}
+{"level":"info","message":"answering with a 400 status code","timestamp":"2017-12-06T16:03:04.290Z"}
+{"message":"Unexpected end of JSON input","stack":"SyntaxError: Unexpected end of JSON input\n    at Object.parse (native)\n    at IncomingMessage.request.on.error (/home/ncarignan/cf/401/lab-assignments/07-http-server/lab-nicholasc/lib/request-parser.js:42:29)\n    at emitNone (events.js:86:13)\n    at IncomingMessage.emit (events.js:185:7)\n    at endReadableNT (_stream_readable.js:974:12)\n    at _combinedTickCallback (internal/process/next_tick.js:80:11)\n    at process._tickCallback (internal/process/next_tick.js:104:9)","level":"info","timestamp":"2017-12-06T16:03:04.290Z"}
+{"level":"info","message":"Server is up on port 3000","timestamp":"2017-12-06T16:04:18.916Z"}
+{"level":"info","message":"Processing Request","timestamp":"2017-12-06T16:04:23.901Z"}
+{"level":"info","message":"Method: GET","timestamp":"2017-12-06T16:04:23.901Z"}
+{"level":"info","message":"URL: /","timestamp":"2017-12-06T16:04:23.901Z"}
+{"level":"info","message":"Headers: {\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"user-agent\":\"node-superagent/3.8.1\",\"connection\":\"close\"}","timestamp":"2017-12-06T16:04:23.901Z"}
+{"level":"info","message":"responding with a 200 status code","timestamp":"2017-12-06T16:04:23.906Z"}
+{"level":"info","message":"Processing Request","timestamp":"2017-12-06T16:04:23.916Z"}
+{"level":"info","message":"Method: GET","timestamp":"2017-12-06T16:04:23.917Z"}
+{"level":"info","message":"URL: /cowsay","timestamp":"2017-12-06T16:04:23.917Z"}
+{"level":"info","message":"Headers: {\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"user-agent\":\"node-superagent/3.8.1\",\"connection\":\"close\"}","timestamp":"2017-12-06T16:04:23.917Z"}
+{"level":"info","message":"answering with a 400 status code","timestamp":"2017-12-06T16:04:23.917Z"}
+{"message":"req is not defined","stack":"ReferenceError: req is not defined\n    at requestParser.parse.then.request (/home/ncarignan/cf/401/lab-assignments/07-http-server/lab-nicholasc/lib/server.js:55:13)\n    at process._tickCallback (internal/process/next_tick.js:109:7)","level":"info","timestamp":"2017-12-06T16:04:23.917Z"}
+{"level":"info","message":"Processing Request","timestamp":"2017-12-06T16:04:23.923Z"}
+{"level":"info","message":"Method: POST","timestamp":"2017-12-06T16:04:23.923Z"}
+{"level":"info","message":"URL: /echo","timestamp":"2017-12-06T16:04:23.923Z"}
+{"level":"info","message":"Headers: {\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"user-agent\":\"node-superagent/3.8.1\",\"content-type\":\"Application/json\",\"content-length\":\"1\",\"connection\":\"close\"}","timestamp":"2017-12-06T16:04:23.923Z"}
+{"level":"info","message":"answering with a 400 status code","timestamp":"2017-12-06T16:04:23.924Z"}
+{"message":"Unexpected end of JSON input","stack":"SyntaxError: Unexpected end of JSON input\n    at Object.parse (native)\n    at IncomingMessage.request.on.error (/home/ncarignan/cf/401/lab-assignments/07-http-server/lab-nicholasc/lib/request-parser.js:42:29)\n    at emitNone (events.js:86:13)\n    at IncomingMessage.emit (events.js:185:7)\n    at endReadableNT (_stream_readable.js:974:12)\n    at _combinedTickCallback (internal/process/next_tick.js:80:11)\n    at process._tickCallback (internal/process/next_tick.js:104:9)","level":"info","timestamp":"2017-12-06T16:04:23.924Z"}
+{"level":"info","message":"Processing Request","timestamp":"2017-12-06T16:04:23.927Z"}
+{"level":"info","message":"Method: POST","timestamp":"2017-12-06T16:04:23.927Z"}
+{"level":"info","message":"URL: /echo","timestamp":"2017-12-06T16:04:23.927Z"}
+{"level":"info","message":"Headers: {\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"user-agent\":\"node-superagent/3.8.1\",\"content-type\":\"Application/json\",\"content-length\":\"1\",\"connection\":\"close\"}","timestamp":"2017-12-06T16:04:23.927Z"}
+{"level":"info","message":"answering with a 400 status code","timestamp":"2017-12-06T16:04:23.928Z"}
+{"message":"Unexpected end of JSON input","stack":"SyntaxError: Unexpected end of JSON input\n    at Object.parse (native)\n    at IncomingMessage.request.on.error (/home/ncarignan/cf/401/lab-assignments/07-http-server/lab-nicholasc/lib/request-parser.js:42:29)\n    at emitNone (events.js:86:13)\n    at IncomingMessage.emit (events.js:185:7)\n    at endReadableNT (_stream_readable.js:974:12)\n    at _combinedTickCallback (internal/process/next_tick.js:80:11)\n    at process._tickCallback (internal/process/next_tick.js:104:9)","level":"info","timestamp":"2017-12-06T16:04:23.928Z"}
+{"level":"info","message":"Processing Request","timestamp":"2017-12-06T16:04:54.508Z"}
+{"level":"info","message":"Method: GET","timestamp":"2017-12-06T16:04:54.509Z"}
+{"level":"info","message":"URL: /","timestamp":"2017-12-06T16:04:54.509Z"}
+{"level":"info","message":"Headers: {\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"user-agent\":\"node-superagent/3.8.1\",\"connection\":\"close\"}","timestamp":"2017-12-06T16:04:54.509Z"}
+{"level":"info","message":"responding with a 200 status code","timestamp":"2017-12-06T16:04:54.509Z"}
+{"level":"info","message":"Processing Request","timestamp":"2017-12-06T16:04:54.518Z"}
+{"level":"info","message":"Method: GET","timestamp":"2017-12-06T16:04:54.518Z"}
+{"level":"info","message":"URL: /cowsay","timestamp":"2017-12-06T16:04:54.518Z"}
+{"level":"info","message":"Headers: {\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"user-agent\":\"node-superagent/3.8.1\",\"connection\":\"close\"}","timestamp":"2017-12-06T16:04:54.518Z"}
+{"level":"info","message":"answering with a 400 status code","timestamp":"2017-12-06T16:04:54.518Z"}
+{"message":"req is not defined","stack":"ReferenceError: req is not defined\n    at requestParser.parse.then.request (/home/ncarignan/cf/401/lab-assignments/07-http-server/lab-nicholasc/lib/server.js:55:13)\n    at process._tickCallback (internal/process/next_tick.js:109:7)","level":"info","timestamp":"2017-12-06T16:04:54.518Z"}
+{"level":"info","message":"Processing Request","timestamp":"2017-12-06T16:04:54.522Z"}
+{"level":"info","message":"Method: POST","timestamp":"2017-12-06T16:04:54.522Z"}
+{"level":"info","message":"URL: /echo","timestamp":"2017-12-06T16:04:54.522Z"}
+{"level":"info","message":"Headers: {\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"user-agent\":\"node-superagent/3.8.1\",\"content-type\":\"Application/json\",\"content-length\":\"1\",\"connection\":\"close\"}","timestamp":"2017-12-06T16:04:54.522Z"}
+{"level":"info","message":"answering with a 400 status code","timestamp":"2017-12-06T16:04:54.522Z"}
+{"message":"Unexpected end of JSON input","stack":"SyntaxError: Unexpected end of JSON input\n    at Object.parse (native)\n    at IncomingMessage.request.on.error (/home/ncarignan/cf/401/lab-assignments/07-http-server/lab-nicholasc/lib/request-parser.js:42:29)\n    at emitNone (events.js:86:13)\n    at IncomingMessage.emit (events.js:185:7)\n    at endReadableNT (_stream_readable.js:974:12)\n    at _combinedTickCallback (internal/process/next_tick.js:80:11)\n    at process._tickCallback (internal/process/next_tick.js:104:9)","level":"info","timestamp":"2017-12-06T16:04:54.522Z"}
+{"level":"info","message":"Processing Request","timestamp":"2017-12-06T16:04:54.526Z"}
+{"level":"info","message":"Method: POST","timestamp":"2017-12-06T16:04:54.526Z"}
+{"level":"info","message":"URL: /echo","timestamp":"2017-12-06T16:04:54.526Z"}
+{"level":"info","message":"Headers: {\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"user-agent\":\"node-superagent/3.8.1\",\"content-type\":\"Application/json\",\"content-length\":\"1\",\"connection\":\"close\"}","timestamp":"2017-12-06T16:04:54.526Z"}
+{"level":"info","message":"answering with a 400 status code","timestamp":"2017-12-06T16:04:54.526Z"}
+{"message":"Unexpected end of JSON input","stack":"SyntaxError: Unexpected end of JSON input\n    at Object.parse (native)\n    at IncomingMessage.request.on.error (/home/ncarignan/cf/401/lab-assignments/07-http-server/lab-nicholasc/lib/request-parser.js:42:29)\n    at emitNone (events.js:86:13)\n    at IncomingMessage.emit (events.js:185:7)\n    at endReadableNT (_stream_readable.js:974:12)\n    at _combinedTickCallback (internal/process/next_tick.js:80:11)\n    at process._tickCallback (internal/process/next_tick.js:104:9)","level":"info","timestamp":"2017-12-06T16:04:54.526Z"}
+{"level":"info","message":"Processing Request","timestamp":"2017-12-06T16:07:02.515Z"}
+{"level":"info","message":"Method: GET","timestamp":"2017-12-06T16:07:02.516Z"}
+{"level":"info","message":"URL: /","timestamp":"2017-12-06T16:07:02.516Z"}
+{"level":"info","message":"Headers: {\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"user-agent\":\"node-superagent/3.8.1\",\"connection\":\"close\"}","timestamp":"2017-12-06T16:07:02.516Z"}
+{"level":"info","message":"responding with a 200 status code","timestamp":"2017-12-06T16:07:02.516Z"}
+{"level":"info","message":"Processing Request","timestamp":"2017-12-06T16:07:02.525Z"}
+{"level":"info","message":"Method: GET","timestamp":"2017-12-06T16:07:02.525Z"}
+{"level":"info","message":"URL: /cowsay","timestamp":"2017-12-06T16:07:02.525Z"}
+{"level":"info","message":"Headers: {\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"user-agent\":\"node-superagent/3.8.1\",\"connection\":\"close\"}","timestamp":"2017-12-06T16:07:02.525Z"}
+{"level":"info","message":"answering with a 400 status code","timestamp":"2017-12-06T16:07:02.526Z"}
+{"message":"req is not defined","stack":"ReferenceError: req is not defined\n    at requestParser.parse.then.request (/home/ncarignan/cf/401/lab-assignments/07-http-server/lab-nicholasc/lib/server.js:55:13)\n    at process._tickCallback (internal/process/next_tick.js:109:7)","level":"info","timestamp":"2017-12-06T16:07:02.526Z"}
+{"level":"info","message":"Processing Request","timestamp":"2017-12-06T16:08:00.092Z"}
+{"level":"info","message":"Method: GET","timestamp":"2017-12-06T16:08:00.092Z"}
+{"level":"info","message":"URL: /","timestamp":"2017-12-06T16:08:00.092Z"}
+{"level":"info","message":"Headers: {\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"user-agent\":\"node-superagent/3.8.1\",\"connection\":\"close\"}","timestamp":"2017-12-06T16:08:00.092Z"}
+{"level":"info","message":"responding with a 200 status code","timestamp":"2017-12-06T16:08:00.093Z"}
+{"level":"info","message":"Processing Request","timestamp":"2017-12-06T16:08:00.101Z"}
+{"level":"info","message":"Method: GET","timestamp":"2017-12-06T16:08:00.101Z"}
+{"level":"info","message":"URL: /cowsay","timestamp":"2017-12-06T16:08:00.101Z"}
+{"level":"info","message":"Headers: {\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"user-agent\":\"node-superagent/3.8.1\",\"connection\":\"close\"}","timestamp":"2017-12-06T16:08:00.102Z"}
+{"level":"info","message":"answering with a 400 status code","timestamp":"2017-12-06T16:08:00.102Z"}
+{"message":"req is not defined","stack":"ReferenceError: req is not defined\n    at requestParser.parse.then.request (/home/ncarignan/cf/401/lab-assignments/07-http-server/lab-nicholasc/lib/server.js:55:13)\n    at process._tickCallback (internal/process/next_tick.js:109:7)","level":"info","timestamp":"2017-12-06T16:08:00.102Z"}
+{"level":"info","message":"Server is up on port 3000","timestamp":"2017-12-06T16:08:15.308Z"}
+{"level":"info","message":"Processing Request","timestamp":"2017-12-06T16:08:20.513Z"}
+{"level":"info","message":"Method: GET","timestamp":"2017-12-06T16:08:20.513Z"}
+{"level":"info","message":"URL: /","timestamp":"2017-12-06T16:08:20.513Z"}
+{"level":"info","message":"Headers: {\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"user-agent\":\"node-superagent/3.8.1\",\"connection\":\"close\"}","timestamp":"2017-12-06T16:08:20.513Z"}
+{"level":"info","message":"responding with a 404 status code","timestamp":"2017-12-06T16:08:20.518Z"}
+{"level":"info","message":"Processing Request","timestamp":"2017-12-06T16:08:20.526Z"}
+{"level":"info","message":"Method: GET","timestamp":"2017-12-06T16:08:20.526Z"}
+{"level":"info","message":"URL: /cowsay","timestamp":"2017-12-06T16:08:20.526Z"}
+{"level":"info","message":"Headers: {\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"user-agent\":\"node-superagent/3.8.1\",\"connection\":\"close\"}","timestamp":"2017-12-06T16:08:20.526Z"}
+{"level":"info","message":"responding with a 200 status code","timestamp":"2017-12-06T16:08:20.527Z"}
+{"level":"info","message":"Server is up on port 3000","timestamp":"2017-12-06T16:10:41.441Z"}
+{"level":"info","message":"Processing Request","timestamp":"2017-12-06T16:10:46.140Z"}
+{"level":"info","message":"Method: GET","timestamp":"2017-12-06T16:10:46.140Z"}
+{"level":"info","message":"URL: /","timestamp":"2017-12-06T16:10:46.141Z"}
+{"level":"info","message":"Headers: {\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"user-agent\":\"node-superagent/3.8.1\",\"connection\":\"close\"}","timestamp":"2017-12-06T16:10:46.141Z"}
+{"level":"info","message":"responding with a 200 status code","timestamp":"2017-12-06T16:10:46.145Z"}
+{"level":"info","message":"Processing Request","timestamp":"2017-12-06T16:10:46.155Z"}
+{"level":"info","message":"Method: GET","timestamp":"2017-12-06T16:10:46.155Z"}
+{"level":"info","message":"URL: /cowsay","timestamp":"2017-12-06T16:10:46.155Z"}
+{"level":"info","message":"Headers: {\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"user-agent\":\"node-superagent/3.8.1\",\"connection\":\"close\"}","timestamp":"2017-12-06T16:10:46.155Z"}
+{"level":"info","message":"responding with a 200 status code","timestamp":"2017-12-06T16:10:46.156Z"}
+{"level":"info","message":"Processing Request","timestamp":"2017-12-06T16:12:27.332Z"}
+{"level":"info","message":"Method: GET","timestamp":"2017-12-06T16:12:27.332Z"}
+{"level":"info","message":"URL: /","timestamp":"2017-12-06T16:12:27.332Z"}
+{"level":"info","message":"Headers: {\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"user-agent\":\"node-superagent/3.8.1\",\"connection\":\"close\"}","timestamp":"2017-12-06T16:12:27.332Z"}
+{"level":"info","message":"responding with a 200 status code","timestamp":"2017-12-06T16:12:27.332Z"}
+{"level":"info","message":"Processing Request","timestamp":"2017-12-06T16:12:27.341Z"}
+{"level":"info","message":"Method: GET","timestamp":"2017-12-06T16:12:27.342Z"}
+{"level":"info","message":"URL: /cowsay","timestamp":"2017-12-06T16:12:27.342Z"}
+{"level":"info","message":"Headers: {\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"user-agent\":\"node-superagent/3.8.1\",\"connection\":\"close\"}","timestamp":"2017-12-06T16:12:27.342Z"}
+{"level":"info","message":"responding with a 200 status code","timestamp":"2017-12-06T16:12:27.342Z"}
+{"level":"info","message":"Server is up on port 3000","timestamp":"2017-12-06T16:12:31.490Z"}
+{"level":"info","message":"Processing Request","timestamp":"2017-12-06T16:12:34.951Z"}
+{"level":"info","message":"Method: GET","timestamp":"2017-12-06T16:12:34.952Z"}
+{"level":"info","message":"URL: /","timestamp":"2017-12-06T16:12:34.952Z"}
+{"level":"info","message":"Headers: {\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"user-agent\":\"node-superagent/3.8.1\",\"connection\":\"close\"}","timestamp":"2017-12-06T16:12:34.952Z"}
+{"level":"info","message":"responding with a 200 status code","timestamp":"2017-12-06T16:12:34.957Z"}
+{"level":"info","message":"Processing Request","timestamp":"2017-12-06T16:12:34.966Z"}
+{"level":"info","message":"Method: GET","timestamp":"2017-12-06T16:12:34.967Z"}
+{"level":"info","message":"URL: /cowsay","timestamp":"2017-12-06T16:12:34.967Z"}
+{"level":"info","message":"Headers: {\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"user-agent\":\"node-superagent/3.8.1\",\"connection\":\"close\"}","timestamp":"2017-12-06T16:12:34.967Z"}
+{"level":"info","message":"answering with a 400 status code","timestamp":"2017-12-06T16:12:34.967Z"}
+{"message":"req is not defined","stack":"ReferenceError: req is not defined\n    at requestParser.parse.then.request (/home/ncarignan/cf/401/lab-assignments/07-http-server/lab-nicholasc/lib/server.js:54:36)\n    at process._tickCallback (internal/process/next_tick.js:109:7)","level":"info","timestamp":"2017-12-06T16:12:34.967Z"}
+{"level":"info","message":"Server is up on port 3000","timestamp":"2017-12-06T16:13:58.868Z"}
+{"level":"info","message":"Processing Request","timestamp":"2017-12-06T16:14:02.328Z"}
+{"level":"info","message":"Method: GET","timestamp":"2017-12-06T16:14:02.329Z"}
+{"level":"info","message":"URL: /","timestamp":"2017-12-06T16:14:02.329Z"}
+{"level":"info","message":"Headers: {\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"user-agent\":\"node-superagent/3.8.1\",\"connection\":\"close\"}","timestamp":"2017-12-06T16:14:02.329Z"}
+{"level":"info","message":"responding with a 200 status code","timestamp":"2017-12-06T16:14:02.334Z"}
+{"level":"info","message":"Processing Request","timestamp":"2017-12-06T16:14:02.342Z"}
+{"level":"info","message":"Method: GET","timestamp":"2017-12-06T16:14:02.342Z"}
+{"level":"info","message":"URL: /cowsay","timestamp":"2017-12-06T16:14:02.343Z"}
+{"level":"info","message":"Headers: {\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"user-agent\":\"node-superagent/3.8.1\",\"connection\":\"close\"}","timestamp":"2017-12-06T16:14:02.343Z"}
+{"level":"info","message":"answering with a 400 status code","timestamp":"2017-12-06T16:14:02.344Z"}
+{"message":"req is not defined","stack":"ReferenceError: req is not defined\n    at requestParser.parse.then.request (/home/ncarignan/cf/401/lab-assignments/07-http-server/lab-nicholasc/lib/server.js:54:36)\n    at process._tickCallback (internal/process/next_tick.js:109:7)","level":"info","timestamp":"2017-12-06T16:14:02.344Z"}
+{"level":"info","message":"Server is up on port 3000","timestamp":"2017-12-06T16:14:12.938Z"}
+{"level":"info","message":"Processing Request","timestamp":"2017-12-06T16:14:17.220Z"}
+{"level":"info","message":"Method: GET","timestamp":"2017-12-06T16:14:17.220Z"}
+{"level":"info","message":"URL: /","timestamp":"2017-12-06T16:14:17.220Z"}
+{"level":"info","message":"Headers: {\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"user-agent\":\"node-superagent/3.8.1\",\"connection\":\"close\"}","timestamp":"2017-12-06T16:14:17.220Z"}
+{"level":"info","message":"responding with a 200 status code","timestamp":"2017-12-06T16:14:17.225Z"}
+{"level":"info","message":"Processing Request","timestamp":"2017-12-06T16:14:17.233Z"}
+{"level":"info","message":"Method: GET","timestamp":"2017-12-06T16:14:17.233Z"}
+{"level":"info","message":"URL: /cowsay","timestamp":"2017-12-06T16:14:17.233Z"}
+{"level":"info","message":"Headers: {\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"user-agent\":\"node-superagent/3.8.1\",\"connection\":\"close\"}","timestamp":"2017-12-06T16:14:17.233Z"}
+{"level":"info","message":"answering with a 400 status code","timestamp":"2017-12-06T16:14:17.234Z"}
+{"message":"req is not defined","stack":"ReferenceError: req is not defined\n    at requestParser.parse.then.request (/home/ncarignan/cf/401/lab-assignments/07-http-server/lab-nicholasc/lib/server.js:54:36)\n    at process._tickCallback (internal/process/next_tick.js:109:7)","level":"info","timestamp":"2017-12-06T16:14:17.234Z"}
+{"level":"info","message":"Processing Request","timestamp":"2017-12-06T16:14:31.723Z"}
+{"level":"info","message":"Method: GET","timestamp":"2017-12-06T16:14:31.723Z"}
+{"level":"info","message":"URL: /","timestamp":"2017-12-06T16:14:31.723Z"}
+{"level":"info","message":"Headers: {\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"user-agent\":\"node-superagent/3.8.1\",\"connection\":\"close\"}","timestamp":"2017-12-06T16:14:31.723Z"}
+{"level":"info","message":"responding with a 200 status code","timestamp":"2017-12-06T16:14:31.724Z"}
+{"level":"info","message":"Processing Request","timestamp":"2017-12-06T16:14:31.732Z"}
+{"level":"info","message":"Method: GET","timestamp":"2017-12-06T16:14:31.732Z"}
+{"level":"info","message":"URL: /cowsay","timestamp":"2017-12-06T16:14:31.732Z"}
+{"level":"info","message":"Headers: {\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"user-agent\":\"node-superagent/3.8.1\",\"connection\":\"close\"}","timestamp":"2017-12-06T16:14:31.733Z"}
+{"level":"info","message":"answering with a 400 status code","timestamp":"2017-12-06T16:14:31.733Z"}
+{"message":"req is not defined","stack":"ReferenceError: req is not defined\n    at requestParser.parse.then.request (/home/ncarignan/cf/401/lab-assignments/07-http-server/lab-nicholasc/lib/server.js:54:36)\n    at process._tickCallback (internal/process/next_tick.js:109:7)","level":"info","timestamp":"2017-12-06T16:14:31.733Z"}
+{"level":"info","message":"Server is up on port 3000","timestamp":"2017-12-06T16:14:35.196Z"}
+{"level":"info","message":"Processing Request","timestamp":"2017-12-06T16:14:38.647Z"}
+{"level":"info","message":"Method: GET","timestamp":"2017-12-06T16:14:38.647Z"}
+{"level":"info","message":"URL: /","timestamp":"2017-12-06T16:14:38.647Z"}
+{"level":"info","message":"Headers: {\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"user-agent\":\"node-superagent/3.8.1\",\"connection\":\"close\"}","timestamp":"2017-12-06T16:14:38.647Z"}
+{"level":"info","message":"responding with a 200 status code","timestamp":"2017-12-06T16:14:38.652Z"}
+{"level":"info","message":"Processing Request","timestamp":"2017-12-06T16:14:38.662Z"}
+{"level":"info","message":"Method: GET","timestamp":"2017-12-06T16:14:38.662Z"}
+{"level":"info","message":"URL: /cowsay","timestamp":"2017-12-06T16:14:38.662Z"}
+{"level":"info","message":"Headers: {\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"user-agent\":\"node-superagent/3.8.1\",\"connection\":\"close\"}","timestamp":"2017-12-06T16:14:38.662Z"}
+{"level":"info","message":"responding with a 200 status code","timestamp":"2017-12-06T16:14:38.662Z"}
+{"level":"info","message":"Processing Request","timestamp":"2017-12-06T16:16:23.440Z"}
+{"level":"info","message":"Method: GET","timestamp":"2017-12-06T16:16:23.440Z"}
+{"level":"info","message":"URL: /","timestamp":"2017-12-06T16:16:23.440Z"}
+{"level":"info","message":"Headers: {\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"user-agent\":\"node-superagent/3.8.1\",\"connection\":\"close\"}","timestamp":"2017-12-06T16:16:23.440Z"}
+{"level":"info","message":"responding with a 200 status code","timestamp":"2017-12-06T16:16:23.441Z"}
+{"level":"info","message":"Processing Request","timestamp":"2017-12-06T16:16:23.450Z"}
+{"level":"info","message":"Method: GET","timestamp":"2017-12-06T16:16:23.450Z"}
+{"level":"info","message":"URL: /cowsay?text=%7Bhi%20im%20me%7D","timestamp":"2017-12-06T16:16:23.450Z"}
+{"level":"info","message":"Headers: {\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"user-agent\":\"node-superagent/3.8.1\",\"connection\":\"close\"}","timestamp":"2017-12-06T16:16:23.450Z"}
+{"level":"info","message":"responding with a 200 status code","timestamp":"2017-12-06T16:16:23.451Z"}
+{"level":"info","message":"Server is up on port 3000","timestamp":"2017-12-06T16:16:44.320Z"}
+{"level":"info","message":"Processing Request","timestamp":"2017-12-06T16:16:48.253Z"}
+{"level":"info","message":"Method: GET","timestamp":"2017-12-06T16:16:48.254Z"}
+{"level":"info","message":"URL: /","timestamp":"2017-12-06T16:16:48.254Z"}
+{"level":"info","message":"Headers: {\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"user-agent\":\"node-superagent/3.8.1\",\"connection\":\"close\"}","timestamp":"2017-12-06T16:16:48.254Z"}
+{"level":"info","message":"responding with a 200 status code","timestamp":"2017-12-06T16:16:48.259Z"}
+{"level":"info","message":"Processing Request","timestamp":"2017-12-06T16:16:48.268Z"}
+{"level":"info","message":"Method: GET","timestamp":"2017-12-06T16:16:48.268Z"}
+{"level":"info","message":"URL: /cowsay?text=%7Bhi%20im%20me%7D","timestamp":"2017-12-06T16:16:48.268Z"}
+{"level":"info","message":"Headers: {\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"user-agent\":\"node-superagent/3.8.1\",\"connection\":\"close\"}","timestamp":"2017-12-06T16:16:48.268Z"}
+{"level":"info","message":"answering with a 400 status code","timestamp":"2017-12-06T16:16:48.270Z"}
+{"message":"req is not defined","stack":"ReferenceError: req is not defined\n    at requestParser.parse.then.request (/home/ncarignan/cf/401/lab-assignments/07-http-server/lab-nicholasc/lib/server.js:54:36)\n    at process._tickCallback (internal/process/next_tick.js:109:7)","level":"info","timestamp":"2017-12-06T16:16:48.270Z"}
+{"level":"info","message":"Processing Request","timestamp":"2017-12-06T16:17:12.111Z"}
+{"level":"info","message":"Method: GET","timestamp":"2017-12-06T16:17:12.111Z"}
+{"level":"info","message":"URL: /","timestamp":"2017-12-06T16:17:12.111Z"}
+{"level":"info","message":"Headers: {\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"user-agent\":\"node-superagent/3.8.1\",\"connection\":\"close\"}","timestamp":"2017-12-06T16:17:12.111Z"}
+{"level":"info","message":"responding with a 200 status code","timestamp":"2017-12-06T16:17:12.111Z"}
+{"level":"info","message":"Processing Request","timestamp":"2017-12-06T16:17:12.120Z"}
+{"level":"info","message":"Method: GET","timestamp":"2017-12-06T16:17:12.120Z"}
+{"level":"info","message":"URL: /cowsay?text=%7Bhiimme%7D","timestamp":"2017-12-06T16:17:12.120Z"}
+{"level":"info","message":"Headers: {\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"user-agent\":\"node-superagent/3.8.1\",\"connection\":\"close\"}","timestamp":"2017-12-06T16:17:12.120Z"}
+{"level":"info","message":"answering with a 400 status code","timestamp":"2017-12-06T16:17:12.120Z"}
+{"message":"req is not defined","stack":"ReferenceError: req is not defined\n    at requestParser.parse.then.request (/home/ncarignan/cf/401/lab-assignments/07-http-server/lab-nicholasc/lib/server.js:54:36)\n    at process._tickCallback (internal/process/next_tick.js:109:7)","level":"info","timestamp":"2017-12-06T16:17:12.120Z"}
+{"level":"info","message":"Processing Request","timestamp":"2017-12-06T16:17:24.290Z"}
+{"level":"info","message":"Method: GET","timestamp":"2017-12-06T16:17:24.290Z"}
+{"level":"info","message":"URL: /","timestamp":"2017-12-06T16:17:24.290Z"}
+{"level":"info","message":"Headers: {\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"user-agent\":\"node-superagent/3.8.1\",\"connection\":\"close\"}","timestamp":"2017-12-06T16:17:24.290Z"}
+{"level":"info","message":"responding with a 200 status code","timestamp":"2017-12-06T16:17:24.290Z"}
+{"level":"info","message":"Processing Request","timestamp":"2017-12-06T16:17:24.300Z"}
+{"level":"info","message":"Method: GET","timestamp":"2017-12-06T16:17:24.300Z"}
+{"level":"info","message":"URL: /cowsay?hi","timestamp":"2017-12-06T16:17:24.300Z"}
+{"level":"info","message":"Headers: {\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"user-agent\":\"node-superagent/3.8.1\",\"connection\":\"close\"}","timestamp":"2017-12-06T16:17:24.300Z"}
+{"level":"info","message":"answering with a 400 status code","timestamp":"2017-12-06T16:17:24.301Z"}
+{"message":"req is not defined","stack":"ReferenceError: req is not defined\n    at requestParser.parse.then.request (/home/ncarignan/cf/401/lab-assignments/07-http-server/lab-nicholasc/lib/server.js:54:36)\n    at process._tickCallback (internal/process/next_tick.js:109:7)","level":"info","timestamp":"2017-12-06T16:17:24.301Z"}
+{"level":"info","message":"Processing Request","timestamp":"2017-12-06T16:18:16.600Z"}
+{"level":"info","message":"Method: GET","timestamp":"2017-12-06T16:18:16.600Z"}
+{"level":"info","message":"URL: /","timestamp":"2017-12-06T16:18:16.600Z"}
+{"level":"info","message":"Headers: {\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"user-agent\":\"node-superagent/3.8.1\",\"connection\":\"close\"}","timestamp":"2017-12-06T16:18:16.600Z"}
+{"level":"info","message":"responding with a 200 status code","timestamp":"2017-12-06T16:18:16.600Z"}
+{"level":"info","message":"Processing Request","timestamp":"2017-12-06T16:18:16.610Z"}
+{"level":"info","message":"Method: GET","timestamp":"2017-12-06T16:18:16.610Z"}
+{"level":"info","message":"URL: /cowsay?text=hi","timestamp":"2017-12-06T16:18:16.610Z"}
+{"level":"info","message":"Headers: {\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"user-agent\":\"node-superagent/3.8.1\",\"connection\":\"close\"}","timestamp":"2017-12-06T16:18:16.610Z"}
+{"level":"info","message":"answering with a 400 status code","timestamp":"2017-12-06T16:18:16.610Z"}
+{"message":"req is not defined","stack":"ReferenceError: req is not defined\n    at requestParser.parse.then.request (/home/ncarignan/cf/401/lab-assignments/07-http-server/lab-nicholasc/lib/server.js:54:36)\n    at process._tickCallback (internal/process/next_tick.js:109:7)","level":"info","timestamp":"2017-12-06T16:18:16.610Z"}
+{"level":"info","message":"Server is up on port 3000","timestamp":"2017-12-06T16:18:58.494Z"}
+{"level":"info","message":"Processing Request","timestamp":"2017-12-06T16:19:02.436Z"}
+{"level":"info","message":"Method: GET","timestamp":"2017-12-06T16:19:02.437Z"}
+{"level":"info","message":"URL: /","timestamp":"2017-12-06T16:19:02.437Z"}
+{"level":"info","message":"Headers: {\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"user-agent\":\"node-superagent/3.8.1\",\"connection\":\"close\"}","timestamp":"2017-12-06T16:19:02.437Z"}
+{"level":"info","message":"responding with a 200 status code","timestamp":"2017-12-06T16:19:02.442Z"}
+{"level":"info","message":"Processing Request","timestamp":"2017-12-06T16:19:02.452Z"}
+{"level":"info","message":"Method: GET","timestamp":"2017-12-06T16:19:02.452Z"}
+{"level":"info","message":"URL: /cowsay?text=hi","timestamp":"2017-12-06T16:19:02.453Z"}
+{"level":"info","message":"Headers: {\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"user-agent\":\"node-superagent/3.8.1\",\"connection\":\"close\"}","timestamp":"2017-12-06T16:19:02.453Z"}
+{"level":"info","message":"answering with a 400 status code","timestamp":"2017-12-06T16:19:02.453Z"}
+{"message":"req is not defined","stack":"ReferenceError: req is not defined\n    at requestParser.parse.then.request (/home/ncarignan/cf/401/lab-assignments/07-http-server/lab-nicholasc/lib/server.js:54:36)\n    at process._tickCallback (internal/process/next_tick.js:109:7)","level":"info","timestamp":"2017-12-06T16:19:02.453Z"}
+{"level":"info","message":"Server is up on port 3000","timestamp":"2017-12-06T16:20:15.035Z"}
+{"level":"info","message":"Processing Request","timestamp":"2017-12-06T16:20:18.919Z"}
+{"level":"info","message":"Method: GET","timestamp":"2017-12-06T16:20:18.919Z"}
+{"level":"info","message":"URL: /","timestamp":"2017-12-06T16:20:18.919Z"}
+{"level":"info","message":"Headers: {\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"user-agent\":\"node-superagent/3.8.1\",\"connection\":\"close\"}","timestamp":"2017-12-06T16:20:18.919Z"}
+{"level":"info","message":"responding with a 200 status code","timestamp":"2017-12-06T16:20:18.924Z"}
+{"level":"info","message":"Processing Request","timestamp":"2017-12-06T16:20:18.933Z"}
+{"level":"info","message":"Method: GET","timestamp":"2017-12-06T16:20:18.933Z"}
+{"level":"info","message":"URL: /cowsay?text=hi","timestamp":"2017-12-06T16:20:18.933Z"}
+{"level":"info","message":"Headers: {\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"user-agent\":\"node-superagent/3.8.1\",\"connection\":\"close\"}","timestamp":"2017-12-06T16:20:18.933Z"}
+{"level":"info","message":"responding with a 200 status code","timestamp":"2017-12-06T16:20:18.935Z"}
+{"level":"info","message":"Server is up on port 3000","timestamp":"2017-12-06T16:21:42.962Z"}
+{"level":"info","message":"Processing Request","timestamp":"2017-12-06T16:21:46.841Z"}
+{"level":"info","message":"Method: GET","timestamp":"2017-12-06T16:21:46.841Z"}
+{"level":"info","message":"URL: /","timestamp":"2017-12-06T16:21:46.841Z"}
+{"level":"info","message":"Headers: {\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"user-agent\":\"node-superagent/3.8.1\",\"connection\":\"close\"}","timestamp":"2017-12-06T16:21:46.842Z"}
+{"level":"info","message":"responding with a 200 status code","timestamp":"2017-12-06T16:21:46.847Z"}
+{"level":"info","message":"Processing Request","timestamp":"2017-12-06T16:21:46.856Z"}
+{"level":"info","message":"Method: GET","timestamp":"2017-12-06T16:21:46.856Z"}
+{"level":"info","message":"URL: /cowsay?text=hi","timestamp":"2017-12-06T16:21:46.856Z"}
+{"level":"info","message":"Headers: {\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"user-agent\":\"node-superagent/3.8.1\",\"connection\":\"close\"}","timestamp":"2017-12-06T16:21:46.856Z"}
+{"level":"info","message":"responding with a 200 status code","timestamp":"2017-12-06T16:21:46.858Z"}
+{"level":"info","message":"Processing Request","timestamp":"2017-12-06T16:21:57.508Z"}
+{"level":"info","message":"Method: GET","timestamp":"2017-12-06T16:21:57.509Z"}
+{"level":"info","message":"URL: /","timestamp":"2017-12-06T16:21:57.509Z"}
+{"level":"info","message":"Headers: {\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"user-agent\":\"node-superagent/3.8.1\",\"connection\":\"close\"}","timestamp":"2017-12-06T16:21:57.509Z"}
+{"level":"info","message":"responding with a 200 status code","timestamp":"2017-12-06T16:21:57.509Z"}
+{"level":"info","message":"Processing Request","timestamp":"2017-12-06T16:21:57.518Z"}
+{"level":"info","message":"Method: GET","timestamp":"2017-12-06T16:21:57.518Z"}
+{"level":"info","message":"URL: /cowsay?text=hi","timestamp":"2017-12-06T16:21:57.518Z"}
+{"level":"info","message":"Headers: {\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"user-agent\":\"node-superagent/3.8.1\",\"connection\":\"close\"}","timestamp":"2017-12-06T16:21:57.518Z"}
+{"level":"info","message":"responding with a 200 status code","timestamp":"2017-12-06T16:21:57.518Z"}
+{"level":"info","message":"Processing Request","timestamp":"2017-12-06T16:22:08.706Z"}
+{"level":"info","message":"Method: GET","timestamp":"2017-12-06T16:22:08.706Z"}
+{"level":"info","message":"URL: /","timestamp":"2017-12-06T16:22:08.706Z"}
+{"level":"info","message":"Headers: {\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"user-agent\":\"node-superagent/3.8.1\",\"connection\":\"close\"}","timestamp":"2017-12-06T16:22:08.706Z"}
+{"level":"info","message":"responding with a 200 status code","timestamp":"2017-12-06T16:22:08.706Z"}
+{"level":"info","message":"Processing Request","timestamp":"2017-12-06T16:22:08.715Z"}
+{"level":"info","message":"Method: GET","timestamp":"2017-12-06T16:22:08.715Z"}
+{"level":"info","message":"URL: /cowsay?text=hi","timestamp":"2017-12-06T16:22:08.715Z"}
+{"level":"info","message":"Headers: {\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"user-agent\":\"node-superagent/3.8.1\",\"connection\":\"close\"}","timestamp":"2017-12-06T16:22:08.715Z"}
+{"level":"info","message":"responding with a 200 status code","timestamp":"2017-12-06T16:22:08.716Z"}
+{"level":"info","message":"Processing Request","timestamp":"2017-12-06T16:22:20.581Z"}
+{"level":"info","message":"Method: GET","timestamp":"2017-12-06T16:22:20.581Z"}
+{"level":"info","message":"URL: /","timestamp":"2017-12-06T16:22:20.582Z"}
+{"level":"info","message":"Headers: {\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"user-agent\":\"node-superagent/3.8.1\",\"connection\":\"close\"}","timestamp":"2017-12-06T16:22:20.582Z"}
+{"level":"info","message":"responding with a 200 status code","timestamp":"2017-12-06T16:22:20.582Z"}
+{"level":"info","message":"Processing Request","timestamp":"2017-12-06T16:22:20.591Z"}
+{"level":"info","message":"Method: GET","timestamp":"2017-12-06T16:22:20.591Z"}
+{"level":"info","message":"URL: /cowsay?text=hi","timestamp":"2017-12-06T16:22:20.591Z"}
+{"level":"info","message":"Headers: {\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"user-agent\":\"node-superagent/3.8.1\",\"connection\":\"close\"}","timestamp":"2017-12-06T16:22:20.591Z"}
+{"level":"info","message":"responding with a 200 status code","timestamp":"2017-12-06T16:22:20.591Z"}
+{"level":"info","message":"Processing Request","timestamp":"2017-12-06T16:22:20.595Z"}
+{"level":"info","message":"Method: POST","timestamp":"2017-12-06T16:22:20.595Z"}
+{"level":"info","message":"URL: /echo","timestamp":"2017-12-06T16:22:20.596Z"}
+{"level":"info","message":"Headers: {\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"user-agent\":\"node-superagent/3.8.1\",\"content-type\":\"Application/json\",\"content-length\":\"1\",\"connection\":\"close\"}","timestamp":"2017-12-06T16:22:20.596Z"}
+{"level":"info","message":"answering with a 400 status code","timestamp":"2017-12-06T16:22:20.597Z"}
+{"message":"Unexpected end of JSON input","stack":"SyntaxError: Unexpected end of JSON input\n    at Object.parse (native)\n    at IncomingMessage.request.on.error (/home/ncarignan/cf/401/lab-assignments/07-http-server/lab-nicholasc/lib/request-parser.js:42:29)\n    at emitNone (events.js:86:13)\n    at IncomingMessage.emit (events.js:185:7)\n    at endReadableNT (_stream_readable.js:974:12)\n    at _combinedTickCallback (internal/process/next_tick.js:80:11)\n    at process._tickCallback (internal/process/next_tick.js:104:9)","level":"info","timestamp":"2017-12-06T16:22:20.597Z"}
