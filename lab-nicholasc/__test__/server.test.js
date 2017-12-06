@@ -20,12 +20,12 @@ describe('server.js', () => {
   });
   test('POST to /api/cowsay request should respond with a 200 status code and a body', () => {
     let bodyToTest = {content : 'i wish i had thumbs'};
-    return superagent.post('http://localhost:3000/echo')
-      .set('Content-Type', 'Application/json')
-      .send('{') //send returns a Promise now everything that follows should be then or catch
-      .then(response => Promise.reject(response)) //prevents it from sending positive response when expecting error
-      .catch(response => {
-        expect(response.status).toEqual(400);
+    return superagent.post('http://localhost:3000/api/cowsay')
+      .set('Content-Type', 'application/json')
+      .send(bodyToTest) //send returns a Promise now everything that follows should be then or catch
+      .then(response => {
+        expect(response.status).toEqual(200);
+        expect(response.text).toContain(`i wish i had thumbs`);
       });
   });
   //

@@ -74,33 +74,7 @@ const app = http.createServer((request, response) => {
         logger.log('info', `responding with a 200 status code`);
         response.end();
         return;
-      // }else if(request.method === 'GET' && request.url.pathname === '/cowsay'){
-      //   response.writeHead(200, {'Content-Type' : 'text/html'});
-      //   // let cowsays;
-      //   // if(!req.url.query.text){
-      //   //   cowsays = 'I need something good to say!';
-      //   // }else {
-      //   //   cowsays = req.url.query.text;
-      //   // }
-      //   cowsays = req.url.query.text;
-      //
-      //   response.write(`<!DOCTYPE html>
-      //                     <html>
-      //                       <head>
-      //                         <title> cowsay </title>
-      //                       </head>
-      //                       <body>
-      //                         <h1> cowsay </h1>
-      //                         <pre>
-      //                           ${cowsay.say({text: cowsays})}
-      //                         </pre>
-      //                       </body>
-      //                     </html>
-      //                     `);
-      //   logger.log('info', `responding with a 200 status code`);
-      //   response.end();
-      //   return;
-      }else if(request.method == 'POST' && request.url.pathname == '/echo'){
+      }else if(request.method == 'POST' && request.url.pathname == '/api/cowsay'){
         response.writeHead(200, {'Content-Type' : 'application/json'});
         response.write(JSON.stringify(request.body));
         response.end();

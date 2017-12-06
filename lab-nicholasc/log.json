@@ -454,3 +454,47 @@
 {"level":"info","message":"Headers: {\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"user-agent\":\"node-superagent/3.8.1\",\"content-type\":\"Application/json\",\"content-length\":\"1\",\"connection\":\"close\"}","timestamp":"2017-12-06T16:22:20.596Z"}
 {"level":"info","message":"answering with a 400 status code","timestamp":"2017-12-06T16:22:20.597Z"}
 {"message":"Unexpected end of JSON input","stack":"SyntaxError: Unexpected end of JSON input\n    at Object.parse (native)\n    at IncomingMessage.request.on.error (/home/ncarignan/cf/401/lab-assignments/07-http-server/lab-nicholasc/lib/request-parser.js:42:29)\n    at emitNone (events.js:86:13)\n    at IncomingMessage.emit (events.js:185:7)\n    at endReadableNT (_stream_readable.js:974:12)\n    at _combinedTickCallback (internal/process/next_tick.js:80:11)\n    at process._tickCallback (internal/process/next_tick.js:104:9)","level":"info","timestamp":"2017-12-06T16:22:20.597Z"}
+{"level":"info","message":"Server is up on port 3000","timestamp":"2017-12-06T16:36:57.563Z"}
+{"level":"info","message":"Processing Request","timestamp":"2017-12-06T16:37:04.940Z"}
+{"level":"info","message":"Method: GET","timestamp":"2017-12-06T16:37:04.941Z"}
+{"level":"info","message":"URL: /","timestamp":"2017-12-06T16:37:04.941Z"}
+{"level":"info","message":"Headers: {\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"user-agent\":\"node-superagent/3.8.1\",\"connection\":\"close\"}","timestamp":"2017-12-06T16:37:04.941Z"}
+{"level":"info","message":"responding with a 200 status code","timestamp":"2017-12-06T16:37:04.945Z"}
+{"level":"info","message":"Processing Request","timestamp":"2017-12-06T16:37:04.954Z"}
+{"level":"info","message":"Method: GET","timestamp":"2017-12-06T16:37:04.954Z"}
+{"level":"info","message":"URL: /cowsay?text=hi","timestamp":"2017-12-06T16:37:04.954Z"}
+{"level":"info","message":"Headers: {\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"user-agent\":\"node-superagent/3.8.1\",\"connection\":\"close\"}","timestamp":"2017-12-06T16:37:04.954Z"}
+{"level":"info","message":"responding with a 200 status code","timestamp":"2017-12-06T16:37:04.956Z"}
+{"level":"info","message":"Processing Request","timestamp":"2017-12-06T16:37:04.960Z"}
+{"level":"info","message":"Method: POST","timestamp":"2017-12-06T16:37:04.960Z"}
+{"level":"info","message":"URL: /echo","timestamp":"2017-12-06T16:37:04.960Z"}
+{"level":"info","message":"Headers: {\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"user-agent\":\"node-superagent/3.8.1\",\"content-type\":\"application/json\",\"content-length\":\"33\",\"connection\":\"close\"}","timestamp":"2017-12-06T16:37:04.960Z"}
+{"level":"info","message":"responding with a 404 status code","timestamp":"2017-12-06T16:37:04.961Z"}
+{"level":"info","message":"Processing Request","timestamp":"2017-12-06T16:37:19.778Z"}
+{"level":"info","message":"Method: GET","timestamp":"2017-12-06T16:37:19.778Z"}
+{"level":"info","message":"URL: /","timestamp":"2017-12-06T16:37:19.778Z"}
+{"level":"info","message":"Headers: {\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"user-agent\":\"node-superagent/3.8.1\",\"connection\":\"close\"}","timestamp":"2017-12-06T16:37:19.778Z"}
+{"level":"info","message":"responding with a 200 status code","timestamp":"2017-12-06T16:37:19.778Z"}
+{"level":"info","message":"Processing Request","timestamp":"2017-12-06T16:37:19.788Z"}
+{"level":"info","message":"Method: GET","timestamp":"2017-12-06T16:37:19.788Z"}
+{"level":"info","message":"URL: /cowsay?text=hi","timestamp":"2017-12-06T16:37:19.788Z"}
+{"level":"info","message":"Headers: {\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"user-agent\":\"node-superagent/3.8.1\",\"connection\":\"close\"}","timestamp":"2017-12-06T16:37:19.788Z"}
+{"level":"info","message":"responding with a 200 status code","timestamp":"2017-12-06T16:37:19.788Z"}
+{"level":"info","message":"Processing Request","timestamp":"2017-12-06T16:37:19.792Z"}
+{"level":"info","message":"Method: POST","timestamp":"2017-12-06T16:37:19.792Z"}
+{"level":"info","message":"URL: /api/cowsay","timestamp":"2017-12-06T16:37:19.792Z"}
+{"level":"info","message":"Headers: {\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"user-agent\":\"node-superagent/3.8.1\",\"content-type\":\"application/json\",\"content-length\":\"33\",\"connection\":\"close\"}","timestamp":"2017-12-06T16:37:19.792Z"}
+{"level":"info","message":"Processing Request","timestamp":"2017-12-06T16:37:52.627Z"}
+{"level":"info","message":"Method: GET","timestamp":"2017-12-06T16:37:52.627Z"}
+{"level":"info","message":"URL: /","timestamp":"2017-12-06T16:37:52.628Z"}
+{"level":"info","message":"Headers: {\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"user-agent\":\"node-superagent/3.8.1\",\"connection\":\"close\"}","timestamp":"2017-12-06T16:37:52.628Z"}
+{"level":"info","message":"responding with a 200 status code","timestamp":"2017-12-06T16:37:52.628Z"}
+{"level":"info","message":"Processing Request","timestamp":"2017-12-06T16:37:52.637Z"}
+{"level":"info","message":"Method: GET","timestamp":"2017-12-06T16:37:52.637Z"}
+{"level":"info","message":"URL: /cowsay?text=hi","timestamp":"2017-12-06T16:37:52.637Z"}
+{"level":"info","message":"Headers: {\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"user-agent\":\"node-superagent/3.8.1\",\"connection\":\"close\"}","timestamp":"2017-12-06T16:37:52.637Z"}
+{"level":"info","message":"responding with a 200 status code","timestamp":"2017-12-06T16:37:52.637Z"}
+{"level":"info","message":"Processing Request","timestamp":"2017-12-06T16:37:52.641Z"}
+{"level":"info","message":"Method: POST","timestamp":"2017-12-06T16:37:52.641Z"}
+{"level":"info","message":"URL: /api/cowsay","timestamp":"2017-12-06T16:37:52.641Z"}
+{"level":"info","message":"Headers: {\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"user-agent\":\"node-superagent/3.8.1\",\"content-type\":\"application/json\",\"content-length\":\"33\",\"connection\":\"close\"}","timestamp":"2017-12-06T16:37:52.642Z"}
