@@ -1,0 +1,482 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for lib/server.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">All files</a> / <a href="index.html">lib</a> server.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">54.05% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>20/37</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">30% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>3/10</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">66.67% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>4/6</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">54.05% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>20/37</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line medium'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">'use strict';
+&nbsp;
+const http = require('http');
+const logger = require('./logger');
+const router = require('./router');
+// const winston = require('winston');
+const requestParser = require('./request-parser');
+const cowsay = require('cowsay');
+&nbsp;
+process.env.PORT = 3000;
+&nbsp;
+require('../route/note-router');
+&nbsp;
+//===================================================
+// const app = http.createServer((request, response) =&gt; {
+//   logger.log('info', 'Processing Request');
+//   logger.log('info', `Method: ${request.method}`);
+//   logger.log('info', `URL: ${request.url}`);
+//   logger.log('info', `Headers: ${JSON.stringify(request.headers)}`);
+//   //process request
+//   requestParser.parse(request)
+//     .then(request =&gt; {
+//       // this is the same as having http:/localhost:3000/
+//       if(request.method === 'GET' &amp;&amp; request.url.pathname === '/'){
+//         response.writeHead(200, {'Content-Type' : 'text/html'});
+//         response.write(`&lt;!DOCTYPE html&gt;
+//                           &lt;html&gt;
+//                             &lt;head&gt;
+//                               &lt;title&gt; cowsay &lt;/title&gt;
+//                             &lt;/head&gt;
+//                             &lt;body&gt;
+//                              &lt;header&gt;
+//                                &lt;nav&gt;
+//                                  &lt;ul&gt;
+//                                    &lt;li&gt;&lt;a href="/cowsay"&gt;cowsay&lt;/a&gt;&lt;/li&gt;
+//                                  &lt;/ul&gt;
+//                                &lt;/nav&gt;
+//                              &lt;header&gt;
+//                              &lt;main&gt;
+//                                &lt;!-- project description --&gt;
+//                              &lt;/main&gt;
+//                             &lt;/body&gt;
+//                           &lt;/html&gt;
+//                           `);
+//         logger.log('info', `responding with a 200 status code`);
+//         response.end();
+//         return;
+//       }if(request.method === 'GET' &amp;&amp; request.url.pathname === '/cowsay'){
+//         response.writeHead(200, {'Content-Type' : 'text/html'});
+//
+//         let cowSays;
+//         if(request.url.query.text)
+//           cowSays = request.url.query.text;
+//         else
+//           cowSays = 'I need something good to say!';
+//
+//         response.write(`&lt;!DOCTYPE html&gt;
+//                           &lt;html&gt;
+//                             &lt;head&gt;
+//                               &lt;title&gt; cowsay &lt;/title&gt;
+//                             &lt;/head&gt;
+//                             &lt;body&gt;
+//                               &lt;h1&gt; cowsay &lt;/h1&gt;
+//                               &lt;pre&gt;
+//                                 ${cowsay.say({ text: cowSays})}
+//                               &lt;/pre&gt;
+//                             &lt;/body&gt;
+//                           &lt;/html&gt;
+//                           `);
+//         logger.log('info', `responding with a 200 status code`);
+//         response.end();
+//         return;
+//       }else if(request.method == 'POST' &amp;&amp; request.url.pathname == '/api/cowsay'){
+//         response.writeHead(200, {'Content-Type' : 'application/json'});
+//         response.write(JSON.stringify(request.body));
+//         response.end();
+//         return;
+//       }
+//       response.writeHead(404, {'Content-Type' : 'text/plain'});
+//       response.write('not found');
+//       logger.log('info', 'responding with a 404 status code');
+//       response.end(); //requuired to end the connection- otherwise connection stays open
+//       return;
+//     }).catch(error =&gt; {
+//       logger.log('info', 'answering with a 400 status code');
+//       logger.log('info', error);
+//       response.writeHead(400, {'Content-Type' : 'text/plain' });
+//       response.write('Bad Request');
+//       response.end();
+//       return;
+//     });
+// });
+// //===================================================
+const app = http.createServer(router.route);
+&nbsp;
+let isServerOn = false ;
+&nbsp;
+const server = module.exports = {};
+&nbsp;
+server.start = () =&gt; {
+  return new Promise((resolve, reject) =&gt;{
+    <span class="missing-if-branch" title="if path not taken" >I</span>if(isServerOn){
+<span class="cstat-no" title="statement not covered" >      logger.log('error', '__SERVER_ERROR__ server is already running');</span>
+<span class="cstat-no" title="statement not covered" >      return reject(new Error('__SERVER_ERROR__ server is already running'));</span>
+    }
+    <span class="missing-if-branch" title="if path not taken" >I</span>if(!process.env.PORT){
+<span class="cstat-no" title="statement not covered" >      logger.log('error', '__SERVER_ERROR__ PORT variable is  not configured');</span>
+<span class="cstat-no" title="statement not covered" >      return reject(new Error('__SERVER_ERROR__ PORT variable is not configured'));</span>
+    }
+    app.listen(process.env.PORT, <span class="fstat-no" title="function not covered" >er</span>ror =&gt; {
+<span class="cstat-no" title="statement not covered" >      if(error)</span>
+<span class="cstat-no" title="statement not covered" >        return reject(error);</span>
+<span class="cstat-no" title="statement not covered" >      isServerOn = true;</span>
+<span class="cstat-no" title="statement not covered" >      logger.log('info', `Server is online on port ${process.env.PORT}`);</span>
+<span class="cstat-no" title="statement not covered" >      console.log('info', `Server is online on port ${process.env.PORT}`);</span>
+<span class="cstat-no" title="statement not covered" >      return resolve();</span>
+&nbsp;
+    });
+  });
+};
+&nbsp;
+server.stop = () =&gt; {
+  return new Promise((resolve, reject) =&gt;{
+    <span class="missing-if-branch" title="else path not taken" >E</span>if(!isServerOn){
+      logger.log('error', '__SERVER_ERROR__ server is already off');
+      return reject(new Error('__SERVER_ERROR__ server is already off'));
+    }
+<span class="cstat-no" title="statement not covered" >    app.close(<span class="fstat-no" title="function not covered" >er</span>ror =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >      if(error){</span>
+<span class="cstat-no" title="statement not covered" >        logger.log('info', `__SERVER_ERROR__ server can't be shut down`);</span>
+<span class="cstat-no" title="statement not covered" >        logger.log('error', error);</span>
+<span class="cstat-no" title="statement not covered" >        return reject(error);</span>
+      }
+<span class="cstat-no" title="statement not covered" >      isServerOn = false;</span>
+<span class="cstat-no" title="statement not covered" >      return resolve();</span>
+&nbsp;
+    });
+  });
+};
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Wed Dec 06 2017 12:26:25 GMT-0800 (PST)
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>

@@ -1,23 +1,12 @@
 'use strict';
 
 const urlModule = require('url');
+const logger = require('./logger');
 const queryStringModule = require('querystring');
 
 
 //=======================
-const winston = require('winston');
-const winstonLevels = {error: 0, warn : 1, info : 2, verbose : 3, debug : 4};
 
-var logger = new (winston.Logger)({
-  transports: [
-    // new (winston.transports.Console)(),
-    new (winston.transports.File)({
-      filename: 'log.json',
-      levels : winstonLevels,
-    }),
-  ],
-});
-//=========================
 const requestParser = module.exports = {};
 
 requestParser.parse = (request) =>{
@@ -39,8 +28,13 @@ requestParser.parse = (request) =>{
     request.on('end', () => {
       try{
         //mutates the request object and creates a body property
-        request.body = JSON.parse(sentText);
-        return resolve(request); //passes new promise along .then chain
+        //here we assume this is json
+        if(request.headers['Content-Type'].indexOf('application/json') > -1){
+          request.body = JSON.parse(sentText);
+          return resolve(request); //passes new promise along .then chain
+        }else{
+          return reject(request);
+        }
       }catch(error){
         return reject(error);
       }
