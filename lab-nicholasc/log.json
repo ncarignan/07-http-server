@@ -498,3 +498,17 @@
 {"level":"info","message":"Method: POST","timestamp":"2017-12-06T16:37:52.641Z"}
 {"level":"info","message":"URL: /api/cowsay","timestamp":"2017-12-06T16:37:52.641Z"}
 {"level":"info","message":"Headers: {\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"user-agent\":\"node-superagent/3.8.1\",\"content-type\":\"application/json\",\"content-length\":\"33\",\"connection\":\"close\"}","timestamp":"2017-12-06T16:37:52.642Z"}
+{"level":"info","message":"Processing Request","timestamp":"2017-12-06T17:04:35.337Z"}
+{"level":"info","message":"Method: GET","timestamp":"2017-12-06T17:04:35.337Z"}
+{"level":"info","message":"URL: /","timestamp":"2017-12-06T17:04:35.337Z"}
+{"level":"info","message":"Headers: {\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"user-agent\":\"node-superagent/3.8.1\",\"connection\":\"close\"}","timestamp":"2017-12-06T17:04:35.337Z"}
+{"level":"info","message":"responding with a 200 status code","timestamp":"2017-12-06T17:04:35.337Z"}
+{"level":"info","message":"Processing Request","timestamp":"2017-12-06T17:04:35.347Z"}
+{"level":"info","message":"Method: GET","timestamp":"2017-12-06T17:04:35.347Z"}
+{"level":"info","message":"URL: /cowsay?text=hi","timestamp":"2017-12-06T17:04:35.348Z"}
+{"level":"info","message":"Headers: {\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"user-agent\":\"node-superagent/3.8.1\",\"connection\":\"close\"}","timestamp":"2017-12-06T17:04:35.348Z"}
+{"level":"info","message":"responding with a 200 status code","timestamp":"2017-12-06T17:04:35.348Z"}
+{"level":"info","message":"Processing Request","timestamp":"2017-12-06T17:04:35.352Z"}
+{"level":"info","message":"Method: POST","timestamp":"2017-12-06T17:04:35.352Z"}
+{"level":"info","message":"URL: /api/cowsay","timestamp":"2017-12-06T17:04:35.352Z"}
+{"level":"info","message":"Headers: {\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"user-agent\":\"node-superagent/3.8.1\",\"content-type\":\"application/json\",\"content-length\":\"33\",\"connection\":\"close\"}","timestamp":"2017-12-06T17:04:35.353Z"}

@@ -3,6 +3,21 @@
 const superagent = require('superagent');
 const server = require('../lib/server');
 
+describe('api/notes', () => {
+  test('should respond with a 200 status code and a body if there is no error', () => {
+    return superagent.post('http//localhost:3000/api/notes')
+      .set('Content-Type', 'application/json')
+      .send({
+        title : 'cats',
+        content : 'Gregor and the hound',
+      })
+      .then(response => {
+        expect(response.status).toEqual(200);
+      });
+  });
+});
+
+
 describe('server.js', () => {
   test('GET request to / should respond with a 200 status code and a body if there is no error', () => {
     return superagent.get('http://localhost:3000/')
@@ -15,7 +30,7 @@ describe('server.js', () => {
     return superagent.get('http://localhost:3000/cowsay?text=hi')
       .then(response => {
         expect(response.status).toEqual(200);
-        expect(response.text).toContain(`cowsay`);
+        expect(response.text).toContain(`<title> cowsay </title>`);
       });
   });
   test('POST to /api/cowsay request should respond with a 200 status code and a body', () => {

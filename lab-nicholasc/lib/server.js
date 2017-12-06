@@ -1,20 +1,12 @@
 'use strict';
 
 const http = require('http');
-const winston = require('winston');
+const logger = require('./logger');
+// const router = require()
+// const winston = require('winston');
 const requestParser = require('./request-parser');
 const cowsay = require('cowsay');
-const winstonLevels = {error: 0, warn : 1, info : 2, verbose : 3, debug : 4};
 
-
-const logger = new(winston.Logger)({
-  transports : [
-    new (winston.transports.File)({
-      filename : 'log.json',
-      levels : winstonLevels,
-    }),
-  ],
-});
 //===================================================
 const app = http.createServer((request, response) => {
   logger.log('info', 'Processing Request');
@@ -95,14 +87,47 @@ const app = http.createServer((request, response) => {
     });
 });
 //===================================================
+let isServerOn = false ;
+
 const server = module.exports = {};
 
-server.start = (port, callback) => {
-  logger.log('info', `Server is up on port ${port}`);
-  return app.listen(port, callback);
+server.start = () => {
+  return new Promise((resolve, reject) =>{
+    if(isServerOn){
+      logger.log('error', '__SERVER_ERROR__ server is already running');
+      return reject(new Error('__SERVER_ERROR__ server is already running'));
+    }
+    if(!process.env.PORT){
+      logger.log('error', '__SERVER_ERROR__ PORT variable is  not configured');
+      return reject(new Error('__SERVER_ERROR__ PORT variable is not configured'));
+    }
+    app.listen(process.env.PORT, error => {
+      if(error)
+        return reject(error);
+      isServerOn = true;
+      logger.log('info', `Server is online on port ${process.env.PORT}`);
+      console.log('info', `Server is online on port ${process.env.PORT}`);
+      return resolve();
+
+    });
+  });
 };
 
-server.stop = (callback) => {
-  logger.log('info', `Server stopped with no errors`);
-  return app.close(callback);
+server.stop = () => {
+  return new Promise((resolve, reject) =>{
+    if(!isServerOn){
+      logger.log('error', '__SERVER_ERROR__ server is already off');
+      return reject(new Error('__SERVER_ERROR__ server is already off'));
+    }
+    app.close(error => {
+      if(error){
+        logger.log('info', `__SERVER_ERROR__ server can't be shut down`);
+        logger.log('error', error);
+        return reject(error);
+      }
+      isServerOn = false;
+      return resolve();
+
+    });
+  });
 };
