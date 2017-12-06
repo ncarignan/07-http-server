@@ -108,3 +108,25 @@
 {"level":"info","message":"hello world","timestamp":"2017-12-05T06:07:27.022Z"}
 {"level":"info","message":"hello world","timestamp":"2017-12-05T06:07:27.246Z"}
 {"level":"info","message":"server is up","timestamp":"2017-12-05T06:07:27.246Z"}
+{"level":"info","message":"hello world","timestamp":"2017-12-06T00:09:10.382Z"}
+{"level":"info","message":"Server is up on port 3000","timestamp":"2017-12-06T00:09:10.632Z"}
+{"level":"info","message":"Processing Request","timestamp":"2017-12-06T00:09:23.833Z"}
+{"level":"info","message":"Method: POST","timestamp":"2017-12-06T00:09:23.833Z"}
+{"level":"info","message":"URL: /echo","timestamp":"2017-12-06T00:09:23.833Z"}
+{"level":"info","message":"Headers: {\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"user-agent\":\"node-superagent/3.8.1\",\"content-type\":\"application/json\",\"content-length\":\"16\",\"connection\":\"close\"}","timestamp":"2017-12-06T00:09:23.834Z"}
+{"level":"info","message":"Processing Request","timestamp":"2017-12-06T00:09:23.848Z"}
+{"level":"info","message":"Method: POST","timestamp":"2017-12-06T00:09:23.848Z"}
+{"level":"info","message":"URL: /echo","timestamp":"2017-12-06T00:09:23.848Z"}
+{"level":"info","message":"Headers: {\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"user-agent\":\"node-superagent/3.8.1\",\"content-type\":\"Application/json\",\"content-length\":\"1\",\"connection\":\"close\"}","timestamp":"2017-12-06T00:09:23.848Z"}
+{"level":"info","message":"answering with a 400 status code","timestamp":"2017-12-06T00:09:23.848Z"}
+{"message":"Unexpected end of JSON input","stack":"SyntaxError: Unexpected end of JSON input\n    at Object.parse (native)\n    at IncomingMessage.request.on.error (/home/ncarignan/cf/401/lab-assignments/07-http-server/lab-nicholasc/lib/request-parser.js:41:29)\n    at emitNone (events.js:86:13)\n    at IncomingMessage.emit (events.js:185:7)\n    at endReadableNT (_stream_readable.js:974:12)\n    at _combinedTickCallback (internal/process/next_tick.js:80:11)\n    at process._tickCallback (internal/process/next_tick.js:104:9)","level":"info","timestamp":"2017-12-06T00:09:23.849Z"}
+{"level":"info","message":"Processing Request","timestamp":"2017-12-06T00:11:01.741Z"}
+{"level":"info","message":"Method: POST","timestamp":"2017-12-06T00:11:01.745Z"}
+{"level":"info","message":"URL: /echo","timestamp":"2017-12-06T00:11:01.745Z"}
+{"level":"info","message":"Headers: {\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"user-agent\":\"node-superagent/3.8.1\",\"content-type\":\"application/json\",\"content-length\":\"16\",\"connection\":\"close\"}","timestamp":"2017-12-06T00:11:01.746Z"}
+{"level":"info","message":"Processing Request","timestamp":"2017-12-06T00:11:01.756Z"}
+{"level":"info","message":"Method: POST","timestamp":"2017-12-06T00:11:01.756Z"}
+{"level":"info","message":"URL: /echo","timestamp":"2017-12-06T00:11:01.756Z"}
+{"level":"info","message":"Headers: {\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"user-agent\":\"node-superagent/3.8.1\",\"content-type\":\"Application/json\",\"content-length\":\"1\",\"connection\":\"close\"}","timestamp":"2017-12-06T00:11:01.756Z"}
+{"level":"info","message":"answering with a 400 status code","timestamp":"2017-12-06T00:11:01.756Z"}
+{"message":"Unexpected end of JSON input","stack":"SyntaxError: Unexpected end of JSON input\n    at Object.parse (native)\n    at IncomingMessage.request.on.error (/home/ncarignan/cf/401/lab-assignments/07-http-server/lab-nicholasc/lib/request-parser.js:41:29)\n    at emitNone (events.js:86:13)\n    at IncomingMessage.emit (events.js:185:7)\n    at endReadableNT (_stream_readable.js:974:12)\n    at _combinedTickCallback (internal/process/next_tick.js:80:11)\n    at process._tickCallback (internal/process/next_tick.js:104:9)","level":"info","timestamp":"2017-12-06T00:11:01.756Z"}

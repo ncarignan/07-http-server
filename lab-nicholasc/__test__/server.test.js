@@ -3,13 +3,12 @@
 const superagent = require('superagent');
 const server = require('../lib/server');
 
-describe('server.test.js', () => {
+describe('server.js', () => {
   test('POST request should respond with a 200 status code and a body if there is no error', () => {
     let bodyToTest = {car : 'Gregor'};
     return superagent.post('http://localhost:3000/echo')
       .send(bodyToTest) //send returns a Promise now everything that follows should be then or catch
       .then(response => {
-        //here is where we use expect
         expect(response.status).toEqual(200);
         expect(response.body).toEqual(bodyToTest); //TODO: in homework- this line will change
       });
@@ -21,9 +20,7 @@ describe('server.test.js', () => {
       .send('{') //send returns a Promise now everything that follows should be then or catch
       .then(response => Promise.reject(response)) //prevents it from sending positive response when expecting error
       .catch(response => {
-        //here is where we use expect
         expect(response.status).toEqual(400);
-        expect(response.body).toEqual(bodyToTest); //TODO: in homework- this line will change
       });
   });
 });

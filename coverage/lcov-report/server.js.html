@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for server.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="prettify.css" />
+    <link rel="stylesheet" href="base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="index.html">All files</a> server.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">24.39% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>10/41</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/8</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/5</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">24.39% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>10/41</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">'use strict';
+&nbsp;
+const http = require('http');
+const winston = require('winston');
+const requestParser = require('./request-parser');
+const faker = require('faker');
+const winstonLevels = {error: 0, warn : 1, info : 2, verbose : 3, debug : 4};
+&nbsp;
+&nbsp;
+const logger = new(winston.Logger)({
+  transports : [
+    new (winston.transports.File)({
+      filename : 'log.json',
+      levels : winstonLevels,
+    }),
+  ],
+});
+//===================================================
+const app = http.createServer(<span class="fstat-no" title="function not covered" >(r</span>equest, response) =&gt; {
+<span class="cstat-no" title="statement not covered" >  logger.log('info', 'Processing Request');</span>
+<span class="cstat-no" title="statement not covered" >  logger.log('info', `Method: ${request.method}`);</span>
+<span class="cstat-no" title="statement not covered" >  logger.log('info', `URL: ${request.url}`);</span>
+<span class="cstat-no" title="statement not covered" >  logger.log('info', `Headers: ${JSON.stringify(request.headers)}`);</span>
+  //process request
+<span class="cstat-no" title="statement not covered" >  requestParser.parse(request)</span>
+    .then(<span class="fstat-no" title="function not covered" >re</span>quest =&gt; {
+      // this is the same as having http:/localhost:3000/
+<span class="cstat-no" title="statement not covered" >      if(request.method === 'GET' &amp;&amp; request.url.pathname === '/'){</span>
+<span class="cstat-no" title="statement not covered" >        response.writeHead(200, {'Content-Type' : 'text/html'});</span>
+<span class="cstat-no" title="statement not covered" >        response.write(`&lt;DOCTYPE html&gt;</span>
+          &lt;head&gt;&lt;title&gt;&lt;THIS IS A TITLE!&lt;/title&gt;&lt;/head&gt;
+          &lt;body&gt;
+            &lt;h1&gt;HELO WORLD FROM THE SERVER&lt;/h1&gt;
+            &lt;h2?${faker.hacker.phrase()}&lt;/h2&gt;
+          &lt;/body&gt;
+          &lt;/html&gt;`);
+<span class="cstat-no" title="statement not covered" >        logger.log('info', `responding with a 200 status code`);</span>
+<span class="cstat-no" title="statement not covered" >        response.end();</span>
+<span class="cstat-no" title="statement not covered" >        return;</span>
+      }else <span class="cstat-no" title="statement not covered" >if(request.method == 'POST' &amp;&amp; request.url.pathname == '/echo'){</span>
+<span class="cstat-no" title="statement not covered" >        response.writeHead(200, {'Content-Type' : 'application/json'});</span>
+<span class="cstat-no" title="statement not covered" >        response.write(JSON.stringify(request.body));</span>
+<span class="cstat-no" title="statement not covered" >        response.end();</span>
+<span class="cstat-no" title="statement not covered" >        return;</span>
+      }
+<span class="cstat-no" title="statement not covered" >      response.writeHead(404, {'Content-Type' : 'text/plain'});</span>
+<span class="cstat-no" title="statement not covered" >      response.write('not found');</span>
+<span class="cstat-no" title="statement not covered" >      logger.log('info', 'responding with a 404 status code');</span>
+<span class="cstat-no" title="statement not covered" >      response.end(); </span>//requuired to end the connection- otherwise connection stays open
+<span class="cstat-no" title="statement not covered" >      return;</span>
+    }).catch(<span class="fstat-no" title="function not covered" >er</span>ror =&gt; {
+<span class="cstat-no" title="statement not covered" >      logger.log('info', 'answering with a 400 status code');</span>
+<span class="cstat-no" title="statement not covered" >      logger.log('info', error);</span>
+<span class="cstat-no" title="statement not covered" >      response.writeHead(400, {'Content-Type' : 'text/plain' });</span>
+<span class="cstat-no" title="statement not covered" >      response.write('Bad Request');</span>
+<span class="cstat-no" title="statement not covered" >      response.end();</span>
+<span class="cstat-no" title="statement not covered" >      return;</span>
+    });
+});
+//===================================================
+const server = module.exports = {};
+&nbsp;
+server.start = <span class="fstat-no" title="function not covered" >(p</span>ort, callback) =&gt; {
+<span class="cstat-no" title="statement not covered" >  logger.log('info', `Server is up on port ${port}`);</span>
+<span class="cstat-no" title="statement not covered" >  return app.listen(port, callback);</span>
+};
+&nbsp;
+server.stop = <span class="fstat-no" title="function not covered" >(c</span>allback) =&gt; {
+<span class="cstat-no" title="statement not covered" >  logger.log('info', `Server stopped with no errors`);</span>
+<span class="cstat-no" title="statement not covered" >  return app.close(callback);</span>
+};
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Tue Dec 05 2017 17:13:59 GMT-0800 (PST)
+</div>
+</div>
+<script src="prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="sorter.js"></script>
+</body>
+</html>

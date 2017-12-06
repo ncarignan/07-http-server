@@ -2,10 +2,10 @@
 
 const http = require('http');
 const winston = require('winston');
-const requestParser = require('request-parser');
+const requestParser = require('./request-parser');
 const faker = require('faker');
-
 const winstonLevels = {error: 0, warn : 1, info : 2, verbose : 3, debug : 4};
+
 
 const logger = new(winston.Logger)({
   transports : [
@@ -26,8 +26,32 @@ const app = http.createServer((request, response) => {
     .then(request => {
       // this is the same as having http:/localhost:3000/
       if(request.method === 'GET' && request.url.pathname === '/'){
-        response.writeHead(200, {//required to send a status code
-          'Content-Type' : 'text/html'});
+        response.writeHead(200, {'Content-Type' : 'text/html'});
+        response.write(`<!DOCTYPE html>
+                          <html>
+                            <head>
+                              <title> cowsay </title>
+                            </head>
+                            <body>
+                             <header>
+                               <nav>
+                                 <ul>
+                                   <li><a href="/cowsay">cowsay</a></li>
+                                 </ul>
+                               </nav>
+                             <header>
+                             <main>
+                               <!-- project description -->
+                             </main>
+                            </body>
+                          </html>
+                          `);
+        logger.log('info', `responding with a 200 status code`);
+        response.end();
+        return;
+      }
+      if(request.method === 'GET' && request.url.pathname === '/'){
+        response.writeHead(200, {'Content-Type' : 'text/html'});
         response.write(`<DOCTYPE html>
           <head><title><THIS IS A TITLE!</title></head>
           <body>
@@ -35,6 +59,7 @@ const app = http.createServer((request, response) => {
             <h2?${faker.hacker.phrase()}</h2>
           </body>
           </html>`);
+
         logger.log('info', `responding with a 200 status code`);
         response.end();
         return;
@@ -44,9 +69,7 @@ const app = http.createServer((request, response) => {
         response.end();
         return;
       }
-      response.writeHead(404, {//required to send a status code
-        'Content-Type' : 'text/plain',
-      });
+      response.writeHead(404, {'Content-Type' : 'text/plain'});
       response.write('not found');
       logger.log('info', 'responding with a 404 status code');
       response.end(); //requuired to end the connection- otherwise connection stays open

@@ -3,21 +3,22 @@
 const urlModule = require('url');
 const queryStringModule = require('querystring');
 
-const requestParser = module.exports = {};
+
 //=======================
 const winston = require('winston');
+const winstonLevels = {error: 0, warn : 1, info : 2, verbose : 3, debug : 4};
 
 var logger = new (winston.Logger)({
   transports: [
-    new (winston.transports.Console)(),
+    // new (winston.transports.Console)(),
     new (winston.transports.File)({
-      filename: 'log.json' }),
-
+      filename: 'log.json',
+      levels : winstonLevels,
+    }),
   ],
 });
 //=========================
-
-
+const requestParser = module.exports = {};
 
 requestParser.parse = (request) =>{
   return new Promise((resolve, reject) => {
